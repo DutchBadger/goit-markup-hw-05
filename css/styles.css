@@ -1,0 +1,222 @@
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+}
+:root {
+  --brand-color: #4d5ae5;
+  --normal-color: #2e2f42;
+  --main-color: #434455;
+  --button-color: #f4f4fd;
+}
+
+/* Default class */
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* Header */
+
+.main-link {
+  text-transform: uppercase;
+  line-height: 1.16;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+}
+.studio-name {
+  color: #2e2f42;
+}
+.menu-list {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--normal-color);
+}
+
+.menu-list:hover {
+  color: #404bbf;
+}
+.menu-list:focus {
+  color: #404bbf;
+}
+
+.contact-information-general {
+  font-style: normal;
+}
+
+.contact-information > a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.contact-information > a:hover {
+  color: #404bbf;
+}
+
+.contact-information > a:focus {
+  color: #404bbf;
+}
+
+/* Main index*/
+
+.motto-background {
+  background-color: var(--normal-color);
+}
+.motto {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #404bbf;
+}
+.button:focus {
+  background-color: #404bbf;
+}
+
+.about-us .our-products {
+  font-size: 36px;
+  line-height: 1.11;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--normal-color);
+  text-decoration: none;
+}
+.about-us-headline {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--normal-color);
+  letter-spacing: 0.02em;
+}
+
+.about-us-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--main-color);
+  letter-spacing: 0.02em;
+}
+
+.our-products {
+  font-size: 36px;
+  line-height: 1.11;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--normal-color);
+  text-decoration: none;
+}
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.our-team {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--normal-color);
+}
+
+.team-list {
+  background-color: #ffffff;
+}
+
+.personality-headline {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--normal-color);
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+}
+
+/* Footer */
+
+.addendum {
+  background-color: var(--normal-color);
+}
+
+.addendum-main-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+.addendum-variable {
+  color: #f4f4fd;
+}
+
+/* Main portfolio*/
+
+.filter-pr {
+  cursor: pointer;
+  background-color: var(--button-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: var(--brand-color);
+}
+
+.filter-pr:hover {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.filter-pr:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+.product-headline {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--normal-color);
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
