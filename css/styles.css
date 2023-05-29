@@ -177,7 +177,16 @@ img {
 /*About us*/
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .about-us {
@@ -286,11 +295,6 @@ img {
   background-color: var(--title-color);
   padding: 100px 0;
 }
-.addendum-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
 
 .addendum-main-link {
   font-family: "Raleway", sans-serif;
@@ -341,10 +345,12 @@ img {
 .filter-pr:hover {
   color: var(--background-color);
   background-color: var(--button-second-color);
+  border: 1px solid transparent;
 }
 .filter-pr:focus {
   color: var(--background-color);
   background-color: var(--button-second-color);
+  border: 1px solid transparent;
 }
 
 .portfolio-products {
