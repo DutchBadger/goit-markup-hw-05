@@ -60,6 +60,8 @@ img {
 .header {
   border-bottom: 1px solid var(--accent-color);
   padding: 24px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -105,6 +107,11 @@ img {
 .menu-list:focus {
   color: var(--pressed-state-color);
 }
+.active {
+  position: relative;
+  color: var(--color-accent);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .menu-list.active::after {
   content: "";
@@ -117,6 +124,8 @@ img {
   left: 0;
   bottom: -1px;
   display: block;
+  height: 4px;
+  background-color: var(--pressed-state-color);
 }
 
 .contact-information-general {
@@ -155,6 +164,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  height: 600px;
 }
 .hero-container {
   display: flex;
@@ -187,7 +198,7 @@ img {
   border-radius: 4px;
   border: 0;
   min-width: 169px;
-  transition: color var(--transition);
+  transition: background-color var(--transition);
 }
 
 .button:hover,
@@ -217,16 +228,17 @@ img {
 
 .about-us-icon {
   background-color: var(--light-color);
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .about-us-headline {
   font-size: 20px;
   margin-bottom: 8px;
-  margin-top: 8px;
   line-height: 1.2;
   font-weight: 500;
   color: var(--dark-color);
@@ -293,7 +305,7 @@ img {
   margin-bottom: 72px;
 }
 .team-info {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-card {
@@ -330,7 +342,9 @@ img {
   height: 40px;
   width: 40px;
 }
-
+.socialmedia-icon {
+  fill: var(--light-color);
+}
 .social-media-link {
   display: flex;
   align-items: center;
@@ -405,9 +419,10 @@ img {
 .addendum-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
-
+.addendum-info {
+  margin-right: 120px;
+}
 .addendum-main-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -432,13 +447,13 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 16px;
 }
 .addendum-social-text {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-background-color);
+  margin-bottom: 16px;
 }
 
 .addendum-social-media-list {
@@ -467,7 +482,7 @@ img {
 
 .addendum-social-media-link:hover,
 .addendum-social-media-link:focus {
-  background-color: var(--pressed-state-color);
+  background-color: var(--success-color);
 }
 
 /* Main portfolio*/
@@ -494,15 +509,15 @@ img {
   padding: 12px 24px;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  transition: border var(--transition), color var(--transition),
-    background-color var(--transition), box-shadow var(--transition);
+  transition: color var(--transition), background-color var(--transition),
+    border-color var(--transition), box-shadow var(--transition);
 }
 
 .filter-pr:hover,
 .filter-pr:focus {
   color: var(--white-background-color);
   background-color: var(--pressed-state-color);
-  border: 1px solid transparent;
+  border-color: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -540,6 +555,12 @@ img {
 .portfolio-item:hover .overflow-text,
 .portfolio-item:focus .overflow-text {
   transform: translateY(0%);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .product-card {
   border: 1px solid var(--accent-color);
@@ -610,9 +631,9 @@ img {
 }
 .close-window:hover,
 .close-window:focus {
-  color: #ffffff;
   background-color: var(--color-accent);
   border: none;
+  color: #ffffff;
 }
 .icon-close {
   transition: fill var(--transition);
