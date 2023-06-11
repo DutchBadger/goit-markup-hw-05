@@ -639,6 +639,6 @@ img {
 }
 
 .close-window:hover .icon-close,
-.close-window:focus .ion-close {
+.close-window:focus .icon-close {
   fill: #ffffff;
 }
