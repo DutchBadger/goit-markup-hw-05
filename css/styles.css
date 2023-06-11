@@ -124,7 +124,6 @@ img {
   left: 0;
   bottom: -1px;
   display: block;
-  height: 4px;
   background-color: var(--pressed-state-color);
 }
 
@@ -535,6 +534,7 @@ img {
 
 .portfolio-card {
   display: block;
+  transition: box-shadow var(--transition);
 }
 
 .portfolio-cover-block {
@@ -550,6 +550,8 @@ img {
   background-color: var(--primary-brand-color);
   color: var(--light-color);
   padding: 40px 32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   transform: translateY(100%);
   transition: transform var(--transition);
 }
@@ -630,17 +632,18 @@ img {
   transition: background-color var(--transition), border var(--transition);
 }
 
-.close-window:hover,
-.close-window:focus {
-  background-color: var(--pressed-state-color);
-  border: none;
-}
-
 .icon-close {
+  fill: #2e2f42;
   transition: fill var(--transition);
 }
 
-.icon-close:hover,
-.icon-close:focus {
+.close-window:hover,
+.close-wondow:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.close-window:hover .icon-close,
+.close-window:focus .icon-close {
   fill: #ffffff;
 }
