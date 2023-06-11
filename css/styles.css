@@ -629,19 +629,16 @@ img {
   cursor: pointer;
   transition: background-color var(--transition), border var(--transition);
 }
-
-.icon-close {
-  fill: #2e2f42;
-  transition: fill var(--transition);
-}
-
 .close-window:hover,
-.close-wondow:focus {
-  background-color: #404bbf;
+.close-window:focus {
+  background-color: var(--pressed-state-color);
   border: none;
 }
-
-.close-window:hover .icon-close,
-.close-window:focus .icon-close {
+.icon-close {
+  color: var(--dark-color);
+  transition: fill var(--transition);
+}
+.icon-close:hover,
+.icon-close:focus {
   fill: #ffffff;
 }
