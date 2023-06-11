@@ -635,7 +635,6 @@ img {
   border: none;
 }
 .icon-close {
-  color: var(--dark-color);
   transition: fill var(--transition);
 }
 .icon-close:hover,
