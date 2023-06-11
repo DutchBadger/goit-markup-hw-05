@@ -634,10 +634,10 @@ img {
   background-color: var(--pressed-state-color);
   border: none;
 }
-.close-window:hover .icon-close,
-.close-window:focus .ion-close {
+.icon-close {
   transition: fill var(--transition);
 }
+
 .close-window:hover .icon-close,
 .close-window:focus .ion-close {
   fill: #ffffff;
