@@ -109,8 +109,8 @@ img {
 }
 .active {
   position: relative;
-  color: var(--color-accent);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--pressed-state-color);
+  transition: color var(--transition);
 }
 
 .menu-list.active::after {
@@ -536,6 +536,7 @@ img {
 .portfolio-card {
   display: block;
 }
+
 .portfolio-cover-block {
   position: relative;
   overflow: hidden;
@@ -552,13 +553,13 @@ img {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
-.portfolio-item:hover .overflow-text,
-.portfolio-item:focus .overflow-text {
+.portfolio-card:hover .overflow-text,
+.portfolio-card:focus .overflow-text {
   transform: translateY(0%);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-card:hover,
+.portfolio-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -627,15 +628,19 @@ img {
   padding: 0;
   cursor: pointer;
   transition: background-color var(--transition), border var(--transition);
-  color: var(--dark-color);
 }
+
 .close-window:hover,
 .close-window:focus {
-  background-color: var(--color-accent);
+  background-color: var(--pressed-state-color);
   border: none;
-  color: #ffffff;
 }
+
 .icon-close {
   transition: fill var(--transition);
-  fill: currentColor;
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  fill: #ffffff;
 }
