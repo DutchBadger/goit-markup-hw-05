@@ -803,16 +803,10 @@ img {
   transition: background-color var(--transition), border var(--transition),
     fill var(--transition);
 }
-.policy {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  text-decoration-line: underline;
-  color: #4d5ae5;
-}
 
-.check-text a {
-  color: var(--pressed-state-color);
+.policy-link {
+  color: #4d5ae5;
+  text-decoration-line: underline;
 }
 
 .input-check:checked + .check-text span {
