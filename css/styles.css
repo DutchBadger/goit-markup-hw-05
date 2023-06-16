@@ -493,7 +493,8 @@ img {
   display: flex;
   gap: 24px;
 }
-
+.footer-email {
+}
 .input-email-footer {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -706,7 +707,7 @@ img {
   margin-bottom: 16px;
 }
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .modal-input {
   width: 100%;
@@ -734,9 +735,9 @@ img {
 }
 
 .modal-label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
   display: block;
@@ -773,14 +774,14 @@ img {
   transition: border-color var(--transition);
 }
 .modal-textarea:focus {
-  background-color: var(--primary-brand-color);
+  border-color: var(--primary-brand-color);
 }
 .modal-checkbox {
   margin-bottom: 24px;
 }
 .check-text {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
   display: flex;
@@ -788,13 +789,14 @@ img {
 }
 
 .user-privacy-check {
+  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 6px;
+  border-radius: 2px;
   margin-right: 2px;
   line-height: 1.17;
-  display: inline-flex;
+
   align-items: center;
   justify-content: center;
   fill: transparent;
