@@ -522,6 +522,7 @@ img {
   border: none;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.04em;
   min-width: 165px;
   height: 40px;
   display: block;
@@ -786,8 +787,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
-  display: flex;
-  align-items: center;
 }
 
 .user-privacy-check {
