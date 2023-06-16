@@ -804,6 +804,10 @@ img {
     fill var(--transition);
 }
 .policy {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
   color: #4d5ae5;
 }
 
