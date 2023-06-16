@@ -757,7 +757,9 @@ img {
   transform: translateY(-50%);
   transition: fill var(--transition);
 }
-
+.comment-field {
+  margin-bottom: 16px;
+}
 .modal-textarea {
   width: 100%;
   height: 120px;
@@ -790,21 +792,20 @@ img {
 
 .user-privacy-check {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 2px;
   line-height: 1.17;
-
-  align-items: center;
-  justify-content: center;
   fill: transparent;
   transition: background-color var(--transition), border var(--transition),
     fill var(--transition);
 }
 .policy {
-  color: var(--primary-brand-color);
+  color: #4d5ae5;
 }
 
 .check-text a {
